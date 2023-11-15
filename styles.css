@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #56F5C4;
+}
+
+
+body, .quote-input {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 19px;
+}
+
+
+.container {
+    background-color: #F58D71;
+    padding: 1rem;
+    border-radius: .5rem;
+    width: 700px;
+    max-width: 90%;
+    margin: 20px 0;
+    text-align: center;
+}
+
+
+.timer{
+    position: absolute;
+    top: 2rem;
+    font-size: 3rem;
+    color: #F58D71;
+    font-weight: bold;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+
+.quote-display{
+    margin-bottom: 1rem;
+    margin-left: calc(1rem + 2px);
+    margin-left: calc(1rem + 2px);
+}
+
+.quote-input{
+    background-color: transparent;
+    border: 2px solid #F5653C;
+    outline: none;
+    width: 100%;
+    height: 8rem;
+    margin: auto;
+    resize: none;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+}
+
+.quote-input:focus{
+    border-color: black;
+}
+
+.correct{
+    color:green;
+}
+
+.incorrect{
+    color:red;
+    text-decoration: underline;
+}
+
+
+
+.targetWPMForm {
+    display: block;
+   margin-top: 30px;
+}
+
+
+.targetWPMForm label, .targetWPMForm input, .targetWPMForm button {
+    display: block;
+    margin-bottom: 10px;  
+}
+
+
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+button[type="submit"] {
+    background-color: #F5653C;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #e9876c;
+}
+
+
