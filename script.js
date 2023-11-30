@@ -94,7 +94,10 @@ function startTimer(characterCount, userInput){
     clearInterval(timer);
 
     timer = setInterval(function() {
-        if (timeleft <= 0){
+        if (userInput == 0){
+            timerElement.innerText = 'Enter a Target WPM';
+        }
+        else if (timeleft <= 0){
             clearInterval(timer);
             timerElement.innerText = "Time's Up"
         }
